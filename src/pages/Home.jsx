@@ -22,7 +22,7 @@ const Home = () => {
             <div className="p-5">
                 <Education />
             </div>
-            <div className="p-5 pt-20">
+            <div className="pt-20">
                 <Projects />
             </div>
         </>
