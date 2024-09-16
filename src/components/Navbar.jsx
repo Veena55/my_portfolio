@@ -3,7 +3,7 @@ import React from 'react'
 const Navbar = () => {
     return (
         <div className="flex justify-center">
-            <div className='flex gap-10 px-10 py-5 shadow-2xl max-w-fit mx-auto rounded-lg bg-white fixed'>
+            <div className='flex gap-10 px-10 py-5 shadow-2xl max-w-fit mx-auto rounded-lg bg-white z-50'>
                 <div><a className='text-lg text-themeColor font-medium'>Home</a></div>
                 <div><a className='text-lg text-themeColor font-medium'>About</a></div>
                 <div><a className='text-lg text-themeColor font-medium'>Skills</a></div>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import coding from '../assets/images/coding.svg'
 import gsap from 'gsap'
 import { BiDownload } from 'react-icons/bi';
-import { MdComputer, MdDeveloperBoard } from 'react-icons/md';
+import { MdComputer } from 'react-icons/md';
 
 const Header = () => {
   const roles = [

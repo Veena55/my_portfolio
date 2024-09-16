@@ -11,10 +11,12 @@ export default {
       },
       backgroundColor: {
         themeBg: '#90caf9',
-        themeLightBg: '#accbee'
+        themeLightBg: '#accbee',
+        themeDarkBg: '#247ad0'
       },
       colors: {
-        themeColor: '#5faaff'
+        themeColor: '#5faaff',
+        themeDarkColor: '#247ad0'
       }
     },
   },
