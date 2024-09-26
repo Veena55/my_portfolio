@@ -84,8 +84,8 @@ const Projects = () => {
 
 
     return (
-        <div className="py-20 mx-auto flex gap-10 justify-around items-center bg projects">
-            <div className='projectTitle outline-dashed outline-4 outline-offset-8 outline-themeDarkColor rounded-full sticky top-0'>
+        <div className="py-20 mx-auto flex gap-10 justify-around items-center bg-themeBgGardient projects">
+            <div className='projectTitle bg-slate-50 outline-dashed outline-4 outline-offset-8 outline-themeDarkColor rounded-full sticky top-0'>
                 <img src={projects} className="mx-auto w-52 h-52 rounded-full shadow-md object-contain border border-themeDarkColor projectTitleImg" alt="education" />
             </div>
             <div className="w-[50%] relative z-50">

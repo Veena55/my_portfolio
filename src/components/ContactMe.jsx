@@ -24,7 +24,7 @@ const ContactMe = () => {
 
 
     return (
-        <div className='pt-10 overflow-hidden' id='contactme'>
+        <div className='p-0 overflow-hidden' id='contactme'>
             <svg className='wave1' width="150%" height="150" xmlns="http://www.w3.org/2000/svg">
                 {/* <path d="M 0 100 Q 50 0, 100 100 T 200 100 Q 250 0, 300 100 T 400 100 Q 450 0, 500 100 T 600 100 Q 650 0, 700 100 T 800 100 Q 850 0, 900 100 T 1000 100 Q 1050 0, 1100 100 T 1200 100 Q 1250 0, 1300 100 T 1400 100 Q 1450 0, 1500 100 T 1600 100 Q 1650 0, 1700 100 T 1800 100 Q 1850 0, 1900 100 V 150 H 0 Z" fill="#e7f0fd"></path> */}
                 <path d="M 0 100 Q 50 0, 700 100 T 800 100 Q 850 0, 1900 0 V 150 H 0 Z" fill="#e7f0fd"></path>

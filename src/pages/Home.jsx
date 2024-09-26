@@ -27,7 +27,7 @@ const Home = () => {
             <div className="pt-20">
                 <Projects />
             </div>
-            <div className="pt-0">
+            <div className="pt-0 bg-themeLightBg">
                 <ContactMe />
             </div>
             <div className="pt-0">
