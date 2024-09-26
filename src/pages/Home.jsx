@@ -5,6 +5,8 @@ import HorizontalScroll from '../components/HorizontalScroll'
 import Education from '../components/Education'
 import AboutMe from '../components/AboutMe'
 import Projects from '../components/Projects'
+import ContactMe from '../components/ContactMe'
+import Footer from '../components/Footer'
 
 const Home = () => {
     return (
@@ -24,6 +26,12 @@ const Home = () => {
             </div>
             <div className="pt-20">
                 <Projects />
+            </div>
+            <div className="pt-0">
+                <ContactMe />
+            </div>
+            <div className="pt-0">
+                <Footer />
             </div>
         </>
 

@@ -20,6 +20,25 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.text-stroke': {
+          '-webkit-text-stroke': '2px #247ad0',
+        },
+        // Custom utility for half-colored text
+        '.text-half-color': {
+          'background': '#247ad0',
+          '-webkit-background-clip': 'text',
+          'background-clip': 'text',
+          'color': 'transparent',
+          'height': '0px',
+          'width': '0px',
+          "display": "inline-block"
+        },
+      }
+      addUtilities(newUtilities, ['responsive', 'hover'])
+    }
+  ],
 }
 

@@ -14,7 +14,7 @@ const HorizontalScroll = () => {
     useEffect(() => {
         // GSAP horizontal scroll animation for the whole skill container
         gsap.to(".skills-wrapper", {
-            x: "-800%", // Move entire wrapper off screen
+            x: "-950%", // Move entire wrapper off screen
             duration: 8, // Adjust duration for smoothness
             delay: 1, // Delay before starting
             repeat: -1, // Infinite scroll
@@ -97,6 +97,12 @@ const HorizontalScroll = () => {
                             <div className="flex flex-col items-center">
                                 <BiLogoSpringBoot className="text-green-400" size={100} />
                                 <p className="text-center font-bold text-lg">Spring Boot</p>
+                            </div>
+                        </div>
+                        <div className="inline-block mx-10 skills-wrapper">
+                            <div className="flex flex-col items-center">
+                                <ImHtmlFive2 className="text-blue-700" size={100} />
+                                <p className="text-center font-bold text-lg">HTML</p>
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,2 @@
+on push basic script should run
+summary: implement transfer build files to the production server folder on namecheap 

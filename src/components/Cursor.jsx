@@ -23,7 +23,7 @@ const Cursor = () => {
     }, [])
     return (
         <>
-            <div className="flex flex-col fixed">
+            <div className="flex flex-col fixed z-40">
                 <div className='h-6 w-6 flex items-center justify-center rounded-full pointer-events-none bg-themeLightBg absolute z-50' ref={cursor1}>
                     <div className='bg-themeColor h-3 w-3 rounded-full animate-bounce'></div>
                 </div>
