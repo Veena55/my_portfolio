@@ -60,18 +60,18 @@ const Header = () => {
   return (
     <div className='flex justify-between items-center px-10 flex-col-reverse lg:flex-row lg:h-screen'>
       <div>
-        <h1 className='text-7xl font-medium'>I'm
+        <h1 className='text-5xl font-medium'>I'm
           <span className='text-stroke text-half-color myName'>
-            <span className='text-7xl font-bold  text-transparent lg:pl-5'> Veena Rao</span>
+            <span className='text-5xl font-bold  text-transparent lg:pl-5'> Veena Rao</span>
           </span>
         </h1>
-        <h1 className='text-3xl py-5 '>
+        <h1 className='text-2xl lg:text-3xl pt-2 lg:py-5 '>
           <span>I'm </span>
           <span className='text-[#247ad0] capitalize roles'> {role}</span>
           <span className='text-[#247ad0] opacity-0 h-10 w-1 bg-[#247ad0] inline-block ms-1 align-middle' id='blink'></span>
         </h1>
-        <div className='flex gap-x-5 mt-5'>
-          <a href='#contactme' className='text-lg bg-themeColor text-white px-5 py-2 rounded-lg shadow-md inline-flex items-center gap-2 font-medium relative z-50'>Hire Me <MdComputer size={20} /></a>
+        <div className='flex flex-col md:flex-row gap-3 md:gap-x-5 mt-5'>
+          <a href='#contact' className='text-lg bg-themeColor text-white px-5 py-2 rounded-lg shadow-md inline-flex items-center gap-2 font-medium relative z-50'>Hire Me <MdComputer size={20} /></a>
           {/* <embed src={resume} type="application/pdf" width="100%" height="600px" /> */}
 
           <a href={resume} className='text-lg border border-themeColor bg-themeBgGardient font-medium px-5 py-2 rounded-lg shadow-md inline-flex items-center gap-2 relative z-50' download="veena_rao_resume.pdf">Download CV <BiDownload size={20} /></a>

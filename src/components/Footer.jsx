@@ -1,5 +1,5 @@
 import React from 'react'
-import { BsGithub, BsLinkedin } from 'react-icons/bs'
+import { BsEnvelope, BsEnvelopeCheck, BsGithub, BsLinkedin } from 'react-icons/bs'
 import { LiaLinkedin } from 'react-icons/lia'
 
 const Footer = () => {
@@ -12,6 +12,7 @@ const Footer = () => {
                 <div className='flex gap-5 relative z-[100] lg:pr-10'>
                     <a href='https://github.com/Veena55/' target='_blank'><BsGithub size={20} /></a>
                     <a href='https://www.linkedin.com/in/veena-rao-a36374175/' target='_blank'><BsLinkedin size={20} /></a>
+                    <a href='mailto:veenasrao5@gmail.com' target='_blank'><BsEnvelopeCheck size={20} /></a>
                 </div>
             </div>
         </div>
