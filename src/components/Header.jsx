@@ -60,12 +60,12 @@ const Header = () => {
   return (
     <div className='flex justify-between items-center px-10 flex-col-reverse lg:flex-row lg:h-screen'>
       <div>
-        <h1 className='text-5xl lg:text-7xl font-medium'>I'm
+        <h1 className='text-5xl lg:text-7xl font-medium block h-[max-content]'>I'm
           <span className='text-stroke text-half-color myName'>
-            <span className='text-5xl lg:text-7xl font-bold  text-transparent lg:pl-5'> Veena Rao</span>
+            <h1 className='text-5xl lg:text-7xl font-bold  text-transparent lg:pl-5'> Veena Rao</h1>
           </span>
         </h1>
-        <h1 className='text-2xl lg:text-3xl mt-3 lg:mt-0 lg:py-5 '>
+        <h1 className='text-lg lg:text-3xl lg:mt-0 lg:py-5 '>
           <span>I'm </span>
           <span className='text-[#247ad0] capitalize roles'> {role}</span>
           <span className='text-[#247ad0] opacity-0 h-10 w-1 bg-[#247ad0] inline-block ms-1 align-middle' id='blink'></span>
