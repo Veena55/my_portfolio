@@ -84,16 +84,16 @@ const Projects = () => {
 
 
     return (
-        <div className="py-20 mx-auto flex gap-10 justify-around items-center bg-themeBgGardient projects">
+        <div id='projects' className="py-20 mx-auto flex lg:flex-row flex-col gap-10 justify-around items-center bg-themeBgGardient projects">
             <div className='projectTitle bg-slate-50 outline-dashed outline-4 outline-offset-8 outline-themeDarkColor rounded-full sticky top-0'>
-                <img src={projects} className="mx-auto w-52 h-52 rounded-full shadow-md object-contain border border-themeDarkColor projectTitleImg" alt="education" />
+                <img src={projects} className="mx-auto w-48 h-48 rounded-full shadow-md object-contain border border-themeDarkColor projectTitleImg" alt="education" />
             </div>
-            <div className="w-[50%] relative z-50">
+            <div className="lg:w-[50%] px-5 relative z-50">
                 {/** Project Cards */}
                 {projectData.map((project, index) => (
                     <div
                         key={index}
-                        className="rounded-xl parentMoveBox relative mt-16 bg-blue-50 hover:bg-blue-100 p-5 w-full border border-b-2 border-b-themeDarkColor hover:border-b-4 duration-700"
+                        className="rounded-xl w-full parentMoveBox relative mt-16 bg-blue-50 hover:bg-blue-100 p-5 border border-b-2 border-b-themeDarkColor hover:border-b-4 duration-700"
                     >
                         <div className="flex justify-between">
                             <h2 className="font-semibold text-xl">{project.title}</h2>
@@ -104,7 +104,7 @@ const Projects = () => {
                         <div>
                             <p className="line-clamp-1 pt-3 text-justify z-50">{project.description}</p>
                         </div>
-                        <div className="absolute w-20 h-20 bg-white top-0 childMoveBox rounded-full opacity-0 z-50">
+                        <div className="absolute lg:w-20  w-12 h-1w-12 lg:h-20 bg-white top-0 childMoveBox rounded-full opacity-0 z-50">
                             <img src={contactme} alt="contact" />
                         </div>
                     </div>

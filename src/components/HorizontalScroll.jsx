@@ -23,7 +23,7 @@ const HorizontalScroll = () => {
     }, []);
 
     return (
-        <div className="w-3/4 mx-auto overflow-hidden py-10 relative">
+        <div id='skills' className="w-3/4 mx-auto overflow-hidden py-10 relative">
             {/* <h1 className='text-center py-5 text-5xl font-bold text-themeColor'>Skills</h1> */}
             <img src={Skills} className="mx-auto w-80" alt="skills" />
             <div className='flex relative justify-between items-center mt-10'>

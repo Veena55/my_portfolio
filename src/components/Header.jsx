@@ -58,11 +58,11 @@ const Header = () => {
 
 
   return (
-    <div className='flex justify-between items-center px-10'>
+    <div className='flex justify-between items-center px-10 flex-col-reverse lg:flex-row h-screen'>
       <div>
         <h1 className='text-7xl font-medium'>I'm
           <span className='text-stroke text-half-color myName'>
-            <span className='text-7xl font-bold  text-transparent pl-5'> Veena Rao</span>
+            <span className='text-7xl font-bold  text-transparent lg:pl-5'> Veena Rao</span>
           </span>
         </h1>
         <h1 className='text-3xl py-5 '>
@@ -77,7 +77,7 @@ const Header = () => {
           <a href={resume} className='text-lg border border-themeColor bg-themeBgGardient font-medium px-5 py-2 rounded-lg shadow-md inline-flex items-center gap-2 relative z-50' download="veena_rao_resume.pdf">Download CV <BiDownload size={20} /></a>
         </div>
       </div>
-      <div className='h-screen w-1/3 md:w-1/4 lg:w-1/2'>
+      <div className='w-full lg:w-1/2'>
         <img src={coding} alt="" className='h-auto w-full' />
       </div>
     </div>

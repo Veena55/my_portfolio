@@ -11,7 +11,7 @@ import Footer from '../components/Footer'
 const Home = () => {
     return (
         <>
-            <div className="h-screen bg-themeBgGardient p-5">
+            <div className=" bg-themeBgGardient p-5">
                 <Navbar />
                 <Header />
             </div>

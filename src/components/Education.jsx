@@ -29,11 +29,11 @@ const Education = () => {
     }, []);
 
     return (
-        <div className="px-10 mx-auto edu-section">
+        <div id='education' className="px-10 mx-auto edu-section">
             <div>
                 <img src={education} className="mx-auto w-80" alt="education" />
             </div>
-            <div className="grid grid-cols-3 justify-between items-center pt-5">
+            <div className="grid lg:grid-cols-3 justify-center items-center grid-rows-3 gap-x-10 pt-5">
                 <div className='pt-10 flex items-center gap-5 edu1 opacity-0'>
                     <div className="w-16 h-16 bg-themeDarkBg rounded-full flex justify-center items-center shadow-xl">
                         <HiAcademicCap className="text-white p-1" size={55} />
