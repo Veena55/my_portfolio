@@ -58,7 +58,7 @@ const Header = () => {
 
 
   return (
-    <div className='flex justify-between items-center px-10 flex-col-reverse lg:flex-row h-screen'>
+    <div className='flex justify-between items-center px-10 flex-col-reverse lg:flex-row lg:h-screen'>
       <div>
         <h1 className='text-7xl font-medium'>I'm
           <span className='text-stroke text-half-color myName'>

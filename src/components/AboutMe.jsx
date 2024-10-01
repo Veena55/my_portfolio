@@ -4,12 +4,12 @@ import aboutme from "../assets/images/sections/aboutme3.svg";
 
 const AboutMe = () => {
     return (
-        <div id='about' className="px-10 mx-auto min-h-screen">
+        <div id='about' className="px-2 lg:px-10 mx-auto lg:min-h-screen">
             <div>
-                <img src={about} className="mx-auto w-80" alt="education" />
+                <img src={about} className="mx-auto w-80" alt="about" />
             </div>
-            <div className='flex lg:flex-row justify-center gap-10 items-center flex-col'>
-                <div className='basis-1/3'>
+            <div className='flex mt-5 lg:flex-row justify-center gap-10 items-center flex-col'>
+                <div className='basis-full lg:basis-1/3'>
                     <img src={aboutme} className='w-full h-full' alt="aboutme" />
                 </div>
                 <div className='py-5 basis-1/2'>

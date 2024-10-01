@@ -11,6 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Education = () => {
     useLayoutEffect(() => {
+        const mm = gsap.matchMedia();
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".edu-section", // The element that triggers the animation
@@ -20,11 +21,24 @@ const Education = () => {
             },
         });
 
-        tl.to([".edu1", ".edu2", ".edu3"], {
-            opacity: 1,
-            x: 50,
-            duration: 1,
-            stagger: 0.8,  // Delay each element by 0.8s
+        // Animation for large screens (lg and up)
+        mm.add("(min-width: 1024px)", () => {
+            tl.to([".edu1", ".edu2", ".edu3"], {
+                opacity: 1,
+                x: 50, // X translation for large screens
+                duration: 1,
+                stagger: 0.8, // Delay each element by 0.8s
+            });
+        });
+
+        // Animation for smaller screens (below lg)
+        mm.add("(max-width: 1023px)", () => {
+            tl.to([".edu1", ".edu2", ".edu3"], {
+                opacity: 1,
+                x: 0, // No x translation for smaller screens
+                duration: 2,
+                stagger: 0.8, // Delay each element by 0.8s
+            });
         });
     }, []);
 
@@ -33,7 +47,7 @@ const Education = () => {
             <div>
                 <img src={education} className="mx-auto w-80" alt="education" />
             </div>
-            <div className="grid lg:grid-cols-3 justify-center items-center grid-rows-3 gap-x-10 pt-5">
+            <div className="grid lg:grid-cols-3 justify-center items-center  gap-x-10 pt-5">
                 <div className='pt-10 flex items-center gap-5 edu1 opacity-0'>
                     <div className="w-16 h-16 bg-themeDarkBg rounded-full flex justify-center items-center shadow-xl">
                         <HiAcademicCap className="text-white p-1" size={55} />
